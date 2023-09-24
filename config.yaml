@@ -1,0 +1,88 @@
+baseURL: https://eternity.bora.sh # todo: change site url.
+title: My Little Museum #
+defaultContentLanguage: 'en'
+theme: eternity
+googleAnalytics: '' # todo: set your analytics id.
+
+params:
+  image: /images/banner.png
+  logo: logo.png # todo: add your custom logo to static/
+  subtitle: Eternity is a minimalist Hugo theme designed for portfolio sites with a fresh feel. # todo: change default subtitle for your website.
+  copyright: All rights reserved. # todo: set your copyright type.
+  author: Xiaokang Fu # todo: set your full name.
+  dontShowSource: false # please, do not do this :)
+  portfolio:
+    columns:
+      desktop:
+        nature: 4
+        archive: 6
+        people: 2
+        default: 3
+      mobile:
+        default: 2
+        archive: 3
+        people: 1
+  socials:
+    # todo: change these links.
+    - icon: 'far fa-envelope fa-lg'
+      url: 'mailto:fxk123@gmail.com'
+      landing: true
+    - icon: 'fab fa-github fa-lg'
+      url: 'https://github.com/wybert'
+      landing: true
+    - icon: 'fab fa-instagram fa-lg'
+      url: 'https://www.instagram.com/fuxiaokang7687'
+    - icon: 'fab fa-linkedin-in fa-lg'
+      url: 'https://www.linkedin.com/in/xiaokang-fu-258b14a2/'
+    - icon: 'fab fa-twitter fa-lg'
+      url: 'https://twitter.com/fxk123'
+      # my website
+    - icon: 'fas fa-globe fa-lg'
+      url: 'https://wybert.github.io/'
+      # landing: true
+  homepage: "/work" # homepage link, mostly same with menu.main[0]
+  specialPages:
+    - work
+    # - archive
+  bypassWelcomePage: false # redirects "/" to "homepage" when it's true.
+  disableWelcomePageBackground: false # disables the background image on the homepage
+  plausible: '' # todo: set your plausible id.
+  disableRadius: false
+  moveIt: false  # Moves Title and Meta info down, only visible when scroll.
+  disableAlwaysResize: false
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  work: ":filename/"
+
+menu:
+  main:
+    - name: work
+      url: /work/
+      weight: 1
+    - name: photography
+      url: /tags/photos/
+      weight: 2
+    - name: poetry
+      url: /tags/poetry/
+      weight: 3
+    - name: music
+      url: /tags/music/
+      weight: 4
+    # - name: archive
+    #   url: /tags/archive/
+    #   weight: 4
+    # - name: stories
+    #   url: /tags/stories/
+    #   weight: 5
+    - name: about
+      url: /about/
+      weight: 6
