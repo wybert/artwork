@@ -9,12 +9,14 @@ hideDate: true
 ---
 
 <div align="center">
+	<img src="https://raw.githubusercontent.com/wybert/Wybert.github.io/master/images/sea.png">
 	<p>
         I am an artist and a scientist. 
 	</p>
 	<p>
 		一只吹着口哨的蚂蚁。
 	</p>
+
 </div>
 
 
